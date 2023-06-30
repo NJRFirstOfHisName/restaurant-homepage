@@ -1,4 +1,5 @@
 import printScreen from './print.js';
+import menu from './menu.js';
 import './style.css'
 import hImage from './headerCrop.jpg'
 
@@ -7,3 +8,4 @@ headerImage.src = hImage;
 document.body.appendChild(headerImage);
 
 printScreen();
+menu();
