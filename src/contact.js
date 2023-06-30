@@ -11,5 +11,6 @@ export default function printContact() {
     phone.appendChild(phoneText);
     contactDisplay.appendChild(phone);
 
-    document.body.appendChild(contactDisplay);
+    const content = document.getElementById('content');
+    content.appendChild(contactDisplay);
 }

@@ -1,30 +1,31 @@
 "use strict";
 (self["webpackChunkrestaurant_homepage"] = self["webpackChunkrestaurant_homepage"] || []).push([["print"],{
 
-/***/ "./src/print.js":
-/*!**********************!*\
-  !*** ./src/print.js ***!
-  \**********************/
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ printScreen)
+/* harmony export */   "default": () => (/* binding */ printHome)
 /* harmony export */ });
-function printScreen() {
-    const element = document.createElement('div');
+function printHome() {
+    const homeDisplay = document.createElement('div');
 
     const header = document.createElement('h2');
     const headerText = document.createTextNode("Tastee Boigahs");
     header.appendChild(headerText);
-    element.appendChild(header);
+    homeDisplay.appendChild(header);
 
     const promo = document.createElement('p');
     const promoText = document.createTextNode("Tastee Boigahs for you. Tastee Boigahs for me. Come have a Tastee Boigah. Give your mouth a treat")
     promo.appendChild(promoText);
-    element.appendChild(promo);
+    homeDisplay.appendChild(promo);
 
-    document.body.appendChild(element);
+    const content = document.getElementById('content');
+    content.appendChild(homeDisplay);
 }
 
 /***/ })
@@ -32,7 +33,7 @@ function printScreen() {
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./src/print.js"));
+/******/ var __webpack_exports__ = (__webpack_exec__("./src/home.js"));
 /******/ }
 ]);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJpbnQuYnVuZGxlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7QUFBZTtBQUNmO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZXN0YXVyYW50LWhvbWVwYWdlLy4vc3JjL3ByaW50LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIHByaW50U2NyZWVuKCkge1xyXG4gICAgY29uc3QgZWxlbWVudCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xyXG5cclxuICAgIGNvbnN0IGhlYWRlciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2gyJyk7XHJcbiAgICBjb25zdCBoZWFkZXJUZXh0ID0gZG9jdW1lbnQuY3JlYXRlVGV4dE5vZGUoXCJUYXN0ZWUgQm9pZ2Foc1wiKTtcclxuICAgIGhlYWRlci5hcHBlbmRDaGlsZChoZWFkZXJUZXh0KTtcclxuICAgIGVsZW1lbnQuYXBwZW5kQ2hpbGQoaGVhZGVyKTtcclxuXHJcbiAgICBjb25zdCBwcm9tbyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3AnKTtcclxuICAgIGNvbnN0IHByb21vVGV4dCA9IGRvY3VtZW50LmNyZWF0ZVRleHROb2RlKFwiVGFzdGVlIEJvaWdhaHMgZm9yIHlvdS4gVGFzdGVlIEJvaWdhaHMgZm9yIG1lLiBDb21lIGhhdmUgYSBUYXN0ZWUgQm9pZ2FoLiBHaXZlIHlvdXIgbW91dGggYSB0cmVhdFwiKVxyXG4gICAgcHJvbW8uYXBwZW5kQ2hpbGQocHJvbW9UZXh0KTtcclxuICAgIGVsZW1lbnQuYXBwZW5kQ2hpbGQocHJvbW8pO1xyXG5cclxuICAgIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoZWxlbWVudCk7XHJcbn0iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJpbnQuYnVuZGxlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7QUFBZTtBQUNmO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3Jlc3RhdXJhbnQtaG9tZXBhZ2UvLi9zcmMvaG9tZS5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBwcmludEhvbWUoKSB7XHJcbiAgICBjb25zdCBob21lRGlzcGxheSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xyXG5cclxuICAgIGNvbnN0IGhlYWRlciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2gyJyk7XHJcbiAgICBjb25zdCBoZWFkZXJUZXh0ID0gZG9jdW1lbnQuY3JlYXRlVGV4dE5vZGUoXCJUYXN0ZWUgQm9pZ2Foc1wiKTtcclxuICAgIGhlYWRlci5hcHBlbmRDaGlsZChoZWFkZXJUZXh0KTtcclxuICAgIGhvbWVEaXNwbGF5LmFwcGVuZENoaWxkKGhlYWRlcik7XHJcblxyXG4gICAgY29uc3QgcHJvbW8gPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdwJyk7XHJcbiAgICBjb25zdCBwcm9tb1RleHQgPSBkb2N1bWVudC5jcmVhdGVUZXh0Tm9kZShcIlRhc3RlZSBCb2lnYWhzIGZvciB5b3UuIFRhc3RlZSBCb2lnYWhzIGZvciBtZS4gQ29tZSBoYXZlIGEgVGFzdGVlIEJvaWdhaC4gR2l2ZSB5b3VyIG1vdXRoIGEgdHJlYXRcIilcclxuICAgIHByb21vLmFwcGVuZENoaWxkKHByb21vVGV4dCk7XHJcbiAgICBob21lRGlzcGxheS5hcHBlbmRDaGlsZChwcm9tbyk7XHJcblxyXG4gICAgY29uc3QgY29udGVudCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdjb250ZW50Jyk7XHJcbiAgICBjb250ZW50LmFwcGVuZENoaWxkKGhvbWVEaXNwbGF5KTtcclxufSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==

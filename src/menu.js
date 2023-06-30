@@ -28,5 +28,6 @@ export default function printMenu() {
         menuDisplay.appendChild(menuCost);
     })
 
-    document.body.appendChild(menuDisplay);
+    const content = document.getElementById('content');
+    content.appendChild(menuDisplay);
 }
