@@ -1,6 +1,6 @@
 import printHome from './home.js';
-import menu from './menu.js';
-import contact from './contact.js';
+import printMenu from './menu.js';
+import printContact from './contact.js';
 import './style.css'
 import hImage from './headerCrop.jpg'
 
@@ -27,7 +27,7 @@ tabs.appendChild(mainPage);
 const menuPage = document.createElement('div');
 menuPage.addEventListener('click', () => {
     content.innerHTML = "";
-    menu();
+    printMenu();
 })
 menuPage.innerHTML = "Menu"
 tabs.appendChild(menuPage);
@@ -35,7 +35,7 @@ tabs.appendChild(menuPage);
 const contactPage = document.createElement('div');
 contactPage.addEventListener('click', () => {
     content.innerHTML = "";
-    contact();
+    printContact();
 })
 contactPage.innerHTML = "Contact"
 tabs.appendChild(contactPage);
