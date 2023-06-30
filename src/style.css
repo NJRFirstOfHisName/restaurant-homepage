@@ -2,6 +2,16 @@
     margin: 0;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div {
+    padding: .5em;
+    border: 1px solid black;
+}
+
 img {
     width: 100%
 }

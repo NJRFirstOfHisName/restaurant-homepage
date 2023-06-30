@@ -8,6 +8,27 @@ const headerImage = new Image();
 headerImage.src = hImage;
 document.body.appendChild(headerImage);
 
-printScreen();
-menu();
-contact();
+const tabs = document.createElement('nav');
+
+const mainPage = document.createElement('div');
+mainPage.addEventListener('click', () => {
+    printScreen();
+})
+mainPage.innerHTML = "Main";
+tabs.appendChild(mainPage);
+
+const menuPage = document.createElement('div');
+menuPage.addEventListener('click', () => {
+    menu();
+})
+menuPage.innerHTML = "Menu"
+tabs.appendChild(menuPage);
+
+const contactPage = document.createElement('div');
+contactPage.addEventListener('click', () => {
+    contact();
+})
+contactPage.innerHTML = "Contact"
+tabs.appendChild(contactPage);
+
+document.body.appendChild(tabs);
