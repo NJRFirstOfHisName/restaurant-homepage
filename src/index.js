@@ -1,5 +1,6 @@
 import printScreen from './print.js';
 import menu from './menu.js';
+import contact from './contact.js';
 import './style.css'
 import hImage from './headerCrop.jpg'
 
@@ -9,3 +10,4 @@ document.body.appendChild(headerImage);
 
 printScreen();
 menu();
+contact();
