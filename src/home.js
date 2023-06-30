@@ -7,7 +7,7 @@ export default function printHome() {
     homeDisplay.appendChild(header);
 
     const promo = document.createElement('p');
-    const promoText = document.createTextNode("Tastee Boigahs for you. Tastee Boigahs for me. Come have a Tastee Boigah. Give your mouth a treat")
+    const promoText = document.createTextNode("Tastee Boigahs for you. Tastee Boigahs for me. Come have a Tastee Boigah. Give your mouth a treat.")
     promo.appendChild(promoText);
     homeDisplay.appendChild(promo);
 
